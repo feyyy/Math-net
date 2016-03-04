@@ -1,15 +1,15 @@
-# Math-net
+## Math-net
 .Net package for Probability and Geometric operations.
 
 A math libary for geometric and probability operations.
 
-
+# Install
 To install Math, run the following command in the Package Manager Console.
 ```
 PM> Install-Package Mobge.Math
 ```
 
-
+# Content
 Includes structs Vector2, Vector3 that supports basic vector oprations;
 ```cs
 var v1 = new Vector2(4.5f, 5.8f);
