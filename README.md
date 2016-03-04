@@ -40,7 +40,7 @@ var combinationsOf3 = list.allNCombinations(3);
 
 IList<float> floatList = ...;
 //or
-float[] floatList
+float[] floatList;
 // fill list with some values
 var mean = floatList.arithmeticMean();
 
