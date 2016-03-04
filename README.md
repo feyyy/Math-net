@@ -3,6 +3,13 @@
 
 A math libary for geometric and probability operations.
 
+
+To install Math, run the following command in the Package Manager Console.
+```
+PM> Install-Package Mobge.Math
+```
+
+
 Includes structs Vector2, Vector3 that supports basic vector oprations;
 ```cs
 var v1 = new Vector2(4.5f, 5.8f);
