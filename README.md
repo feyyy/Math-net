@@ -31,4 +31,17 @@ var contains = polygon.contains(new Vector2(5, 5.5f));
 ```
 
 Includes methods for probability.
+```cs
+IList<anyType> list = ...;
+// or you can use array
+// fill list with some information
 
+var combinationsOf3 = list.allNCombinations(3);
+
+IList<float> floatList = ...;
+//or
+float[] floatList
+// fill list with some values
+var mean = floatList.arithmeticMean();
+
+```
