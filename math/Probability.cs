@@ -56,6 +56,16 @@ namespace Mathematics {
             return combinations;
         }
         public static IList<IList<T>> allNCombinations<T>(this IList<T> collection, int n) {
+
+
+            var polygon = new List<Vector2>();
+            polygon.Add(new Vector2(3, 4));
+            polygon.Add(new Vector2(6, 8.5f));
+            polygon.Add(new Vector2(8.2f, 4f));
+            polygon.Add(new Vector2(5.6f, -0.4f));
+            float area;
+            Vector2 centroid = polygon.centroid(out area);
+
             List<IList<T>> combinations = new List<IList<T>>();
             allNCombinations(collection, n, combinations, new List<T>(), 0);
             return combinations;

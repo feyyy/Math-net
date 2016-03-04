@@ -18,8 +18,8 @@ namespace Mathematics {
             }
 
 
-            var perimeter = perimeterOfPolygon(corners);
-            var area = areaOfPolygone(corners);
+            var perimeter = Geometry.perimeter(corners);
+            var area = Geometry.area(corners);
 
             // a * pi * r^2 / (4 * pi * pi * r^2) = 1
             // a = 4 * pi
@@ -85,7 +85,7 @@ namespace Mathematics {
 
         }
 
-        public static float perimeterOfPolygon(this IList<Vector2> corners) {
+        public static float perimeter(this IList<Vector2> corners) {
 
 
             var prevIndex = corners.Count - 1;
@@ -99,7 +99,7 @@ namespace Mathematics {
 
             return perimeter;
         }
-        public static float areaOfPolygone(this IList<Vector2> corners) {
+        public static float area(this IList<Vector2> corners) {
             
             var prevI = corners.Count - 1;
             float area = 0;
