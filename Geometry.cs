@@ -6,6 +6,12 @@ namespace Mathematics {
     public static class Geometry {
 
         private const float compactnessK = (4 * (float)Math.PI);
+        /// <summary>
+        /// Returns bigger values for more compact polygons.
+        /// Return value approaches 1, while input polygon approaches a perfect circle.
+        /// </summary>
+        /// <param name="corners"></param>
+        /// <returns></returns>
         public static float compactness(IList<Vector2> corners) {
             if(corners.Count <= 0) {
                 return 0;
@@ -20,7 +26,13 @@ namespace Mathematics {
             return compactness(area, perimeter);
 
         }
-
+        /// <summary>
+        /// Returns the same value as in other compactness methods.
+        /// <seealso cref="compactness(IList{Vector2})"/>
+        /// </summary>
+        /// <param name="area"></param>
+        /// <param name="perimeter"></param>
+        /// <returns></returns>
         public static float compactness(float area, float perimeter) {
             return compactnessK * area / (perimeter * perimeter);
         }
@@ -46,7 +58,7 @@ namespace Mathematics {
         }
 
         public static bool contains(IList<Vector2> polygon, Vector2 point) {
-            
+
 
             int prevI = polygon.Count - 1;
             bool intersects = false;
@@ -75,7 +87,7 @@ namespace Mathematics {
 
         public static float perimeterOfPolygon(IList<Vector2> corners) {
 
-            
+
             var prevIndex = corners.Count - 1;
             float perimeter = 0;
             for (int i = 0; i < corners.Count; i++) {
