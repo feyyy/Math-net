@@ -1,0 +1,4 @@
+C:\Users\ferhat\Documents\Visual Studio 2013\Projects\ToothRecognition\Math\bin\Release\Math.dll
+C:\Users\ferhat\Documents\Visual Studio 2013\Projects\ToothRecognition\Math\bin\Release\Math.pdb
+C:\Users\ferhat\Documents\Visual Studio 2013\Projects\ToothRecognition\Math\obj\Release\Math.dll
+C:\Users\ferhat\Documents\Visual Studio 2013\Projects\ToothRecognition\Math\obj\Release\Math.pdb
