@@ -2,3 +2,4 @@ C:\Users\ferhat\Documents\Visual Studio 2013\Projects\ToothRecognition\Math\bin\
 C:\Users\ferhat\Documents\Visual Studio 2013\Projects\ToothRecognition\Math\bin\Debug\Math.pdb
 C:\Users\ferhat\Documents\Visual Studio 2013\Projects\ToothRecognition\Math\obj\Debug\Math.dll
 C:\Users\ferhat\Documents\Visual Studio 2013\Projects\ToothRecognition\Math\obj\Debug\Math.pdb
+C:\Users\ferhat\Documents\Visual Studio 2013\Projects\ToothRecognition\Math\obj\Debug\Math.csprojResolveAssemblyReference.cache

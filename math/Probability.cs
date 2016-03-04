@@ -5,21 +5,21 @@ using System.Text;
 namespace Mathematics {
     public static class Probability {
 
-        public static float arithmeticStandartDeviation(IEnumerable<float> values) {
+        public static float arithmeticStandartDeviation(this IEnumerable<float> values) {
             return (float)System.Math.Sqrt((double)Mathematics.Probability.arithmeticVariance(values));
         }
-        public static float arithmeticVariance(IEnumerable<float> values) {
+        public static float arithmeticVariance(this IEnumerable<float> values) {
             var mean = arithmeticMean(values);
             var squareMean = arithmeticMean(square(values));
             return squareMean - mean * mean;
         }
-        public static IEnumerable<float> square(IEnumerable<float> values) {
+        public static IEnumerable<float> square(this IEnumerable<float> values) {
             foreach (var item in values) {
                 yield return item * item;
             }
         }
 
-        public static float arithmeticMean(IEnumerable<float> values) {
+        public static float arithmeticMean(this IEnumerable<float> values) {
             float sum = 0;
             int count = 0;
             foreach (var item in values) {
@@ -28,7 +28,7 @@ namespace Mathematics {
             }
             return sum / count;
         }
-        public static float median(IList<float> values) {
+        public static float median(this IList<float> values) {
             var count = values.Count;
             if (count % 2 == 0) {
                 var halIndex = count / 2;
@@ -46,7 +46,7 @@ namespace Mathematics {
                 yield return e1.Current + item;
             }
         }
-        public static IList<IList<T>> allCombinations<T>(IList<T> collection) {
+        public static IList<IList<T>> allCombinations<T>(this IList<T> collection) {
             int count = collection.Count;
             List<IList<T>> combinations = new List<IList<T>>();
             var cl = new List<T>();
@@ -55,7 +55,7 @@ namespace Mathematics {
             }
             return combinations;
         }
-        public static IList<IList<T>> allNCombinations<T>(IList<T> collection, int n) {
+        public static IList<IList<T>> allNCombinations<T>(this IList<T> collection, int n) {
             List<IList<T>> combinations = new List<IList<T>>();
             allNCombinations(collection, n, combinations, new List<T>(), 0);
             return combinations;
