@@ -24,6 +24,11 @@ polygon.Add(new Vector2(5.6f, -0.4f));
 
 
 float area;
-Vector2 centroid = Geometry.centroid(polygon, out area);
+Vector2 centroid = polygon.centroid(polygon, out area);
+var area = polygon.area();
+var perimeter = polygon.perimeter();
+var contains = polygon.contains(new Vector2(5, 5.5f));
 ```
+
+Includes methods for probability.
 
