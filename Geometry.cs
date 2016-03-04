@@ -12,7 +12,7 @@ namespace Mathematics {
         /// </summary>
         /// <param name="corners"></param>
         /// <returns></returns>
-        public static float compactness(IList<Vector2> corners) {
+        public static float compactness(this IList<Vector2> corners) {
             if(corners.Count <= 0) {
                 return 0;
             }
@@ -37,7 +37,7 @@ namespace Mathematics {
             return compactnessK * area / (perimeter * perimeter);
         }
 
-        public static Vector2 centroid(IList<Vector2> corners, out float area) {
+        public static Vector2 centroid(this IList<Vector2> corners, out float area) {
 
             var prevIndex = corners.Count - 1;
             Vector2 center = new Vector2();
@@ -57,7 +57,7 @@ namespace Mathematics {
 
         }
 
-        public static bool contains(IList<Vector2> polygon, Vector2 point) {
+        public static bool contains(this IList<Vector2> polygon, Vector2 point) {
 
 
             int prevI = polygon.Count - 1;
@@ -85,7 +85,7 @@ namespace Mathematics {
 
         }
 
-        public static float perimeterOfPolygon(IList<Vector2> corners) {
+        public static float perimeterOfPolygon(this IList<Vector2> corners) {
 
 
             var prevIndex = corners.Count - 1;
@@ -99,7 +99,7 @@ namespace Mathematics {
 
             return perimeter;
         }
-        public static float areaOfPolygone(IList<Vector2> corners) {
+        public static float areaOfPolygone(this IList<Vector2> corners) {
             
             var prevI = corners.Count - 1;
             float area = 0;
