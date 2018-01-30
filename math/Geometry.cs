@@ -5,6 +5,7 @@ using System.Text;
 namespace Mathematics {
     public static class Geometry {
 
+
         private const float compactnessK = (4 * (float)Math.PI);
         /// <summary>
         /// Returns bigger values for more compact polygons.
